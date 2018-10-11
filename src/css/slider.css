@@ -12,6 +12,10 @@ ion-slides.slides-md {
     transform: translate(0, -50%);
     z-index: 1;
     font-size: 4rem;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 #prevSlide {

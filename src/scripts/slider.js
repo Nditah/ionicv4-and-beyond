@@ -6,8 +6,10 @@ async function hideShowNavigation() {
     const begin = await document.getElementById('slider').isBeginning();
     const end = await document.getElementById('slider').isEnd();
 
-    document.getElementById('prevSlide').style.display = !begin ? 'inherit' : 'none';
-    document.getElementById('nextSlide').style.display = !end ? 'inherit' : 'none';
+    document.getElementById('prevSlide').style.visibility = !begin ? 'visible' : 'hidden';
+    document.getElementById('prevSlide').style.opacity = !begin ? '1' : '0';
+    document.getElementById('nextSlide').style.visibility = !end ? 'visible' : 'hidden';
+    document.getElementById('nextSlide').style.opacity = !end ? '1' : '0';
 }
 async function updateSlider() {
     if (!document.getElementById('slider')) {
@@ -46,7 +48,8 @@ const slidesOptions = {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    }
+    },
+    zoom: false
 };
 
 document.getElementById('slider').options = slidesOptions;
