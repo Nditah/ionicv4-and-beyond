@@ -1,0 +1,23 @@
+{
+  "name": "ionicv4-and-beyond",
+  "version": "0.0.1",
+  "description": "Ionic v4, web components, shadow dom and beyond",
+  "homepage": "https://fluster.io",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": {
+    "name": "David Dal Busco",
+    "email": "david.dalbusco@outlook.com",
+    "web": "https://fluster.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peterpeterparker/ionicv4-and-beyond.git"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
