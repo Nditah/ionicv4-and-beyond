@@ -2,6 +2,10 @@ ion-slides {
     height: 100%;
 }
 
+ion-slides.slides-md {
+    --progress-bar-background-active: var(--ion-color-primary);
+}
+
 #prevSlide, #nextSlide {
     position: absolute;
     top: 50%;
