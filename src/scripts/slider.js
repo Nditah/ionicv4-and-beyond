@@ -1,18 +1,3 @@
-document.addEventListener('ionSlidesDidLoad', updateSlider);
-document.addEventListener('ionSlideDidChange', hideShowNavigation);
-
-async function updateSlider() {
-    if (!document.getElementById('slider')) {
-        return;
-    }
-
-    await document.getElementById('slider').update();
-
-    await document.getElementById('slider').stopAutoplay();
-
-    await hideShowNavigation()();
-}
-
 async function hideShowNavigation() {
     if (!document.getElementById('slider')) {
         return;
@@ -23,6 +8,17 @@ async function hideShowNavigation() {
 
     document.getElementById('prevSlide').style.display = !begin ? 'inherit' : 'none';
     document.getElementById('nextSlide').style.display = !end ? 'inherit' : 'none';
+}
+async function updateSlider() {
+    if (!document.getElementById('slider')) {
+        return;
+    }
+
+    await document.getElementById('slider').update();
+
+    await document.getElementById('slider').stopAutoplay();
+
+    await hideShowNavigation();
 }
 
 async function previousSlide() {
@@ -63,3 +59,7 @@ document.addEventListener("keydown", async (e) => {
         await document.getElementById('slider').slideNext();
     }
 });
+
+document.addEventListener('ionSlidesDidLoad', updateSlider);
+document.addEventListener('ionSlideDidChange', hideShowNavigation);
+
