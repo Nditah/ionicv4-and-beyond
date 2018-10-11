@@ -20,6 +20,8 @@
 
     <link href="css/slider.css" rel="stylesheet">
     <script defer src="scripts/slider.js"></script>
+
+    <link href="css/grid.css" rel="stylesheet">
 </head>
 <body style="margin: 0">
 
@@ -31,7 +33,31 @@
             </ion-slide>
 
             <ion-slide>
-                Page 2
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="5" text-right>
+                            <img src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg" style="min-width: 260px; min-height: 260px; border-radius: 50%; border: 0;">
+                        </ion-col>
+                        <ion-col size="7">
+                            <h2>David Dal Busco</h2>
+                            <p>Founder of <a href="https://fluster.io">Fluster</a></p>
+                            <p>Organizer of the Ionic Zürich <a href="https://www.meetup.com/Ionic-Zurich">Meetup</a></p>
+                            <p><small>Zürich, Switzerland</small></p>
+                            <div style="display: flex; justify-content: center">
+                                <div>
+                                    <p><a href="https://forum.ionicframework.com/u/reedrichards/summary"><ion-icon name="logo-ionitron"></ion-icon>reedrichards</i></a></p>
+                                    <p><a href="https://medium.com/@david.dalbusco"><ion-icon src="assets/img/medium-icon.svg"></ion-icon>daviddalbusco</ion-icon></a></p>
+                                    <p><a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon>daviddalbusco</a></p>
+                                </div>
+                                <div style="padding-left: 40px;">
+                                    <p><a href="https://twitter.com/daviddalbusco"><ion-icon name="logo-twitter"></ion-icon>daviddalbusco</a></p>
+                                    <p><a href="https://github.com/peterpeterparker"><ion-icon name="logo-github"></ion-icon>peterpeterparker</a></p>
+                                    <p><a href="https://stackoverflow.com/users/5404186/peter-parker"><ion-icon src="assets/img/stack-overflow-icon.svg"></ion-icon>Peter Parker</a></p>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-slide>
         </ion-slides>
     </ion-content>

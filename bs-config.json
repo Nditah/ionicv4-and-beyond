@@ -1,6 +1,6 @@
 {
   "files": [
-    "./src/**/*.{html,htm,css,js}"
+    "./src/**/*.{html,htm,css,js,svg}"
   ],
   "server": { "baseDir": "./src" }
 }
