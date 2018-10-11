@@ -1,0 +1,19 @@
+ion-slides {
+    height: 100%;
+}
+
+#prevSlide, #nextSlide {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    font-size: 4rem;
+}
+
+#prevSlide {
+    left: 2%;
+}
+
+#nextSlide {
+    right: 2%;
+}

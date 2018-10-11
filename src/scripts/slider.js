@@ -1,9 +1,44 @@
-document.addEventListener("ionSlidesDidLoad", updateSlider);
+document.addEventListener('ionSlidesDidLoad', updateSlider);
+document.addEventListener('ionSlideDidChange', hideShowNavigation);
 
 async function updateSlider() {
+    if (!document.getElementById('slider')) {
+        return;
+    }
+
     await document.getElementById('slider').update();
 
     await document.getElementById('slider').stopAutoplay();
+
+    await hideShowNavigation()();
+}
+
+async function hideShowNavigation() {
+    if (!document.getElementById('slider')) {
+        return;
+    }
+
+    const begin = await document.getElementById('slider').isBeginning();
+    const end = await document.getElementById('slider').isEnd();
+
+    document.getElementById('prevSlide').style.display = !begin ? 'inherit' : 'none';
+    document.getElementById('nextSlide').style.display = !end ? 'inherit' : 'none';
+}
+
+async function previousSlide() {
+    if (!document.getElementById('slider')) {
+        return;
+    }
+
+    await document.getElementById('slider').slidePrev();
+}
+
+async function nextSlide() {
+    if (!document.getElementById('slider')) {
+        return;
+    }
+
+    await document.getElementById('slider').slideNext();
 }
 
 const slidesOptions = {

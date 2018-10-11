@@ -9,8 +9,14 @@
     <meta name="author" content="David Dal Busco">
     <meta name="description" content="Fluster, your simple and open source search for roommates has been recently upgraded to Ionic v4. In this talk, I will highlight some key features of this new version of the framework and will also introduce some concepts like web components, shadow dom, slots or css4 variables which comes along.">
 
+    <!-- Ionic -->
     <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+    <!-- Custom -->
+    <link href="css/slider.css" rel="stylesheet">
+    <script defer src="scripts/slider.js"></script>
 </head>
 <body style="margin: 0">
 
@@ -26,9 +32,15 @@
             </ion-slide>
         </ion-slides>
     </ion-content>
-</ion-app>
 
-<script defer src="scripts/slider.js"></script>
+    <div id="prevSlide" onclick="previousSlide()">
+        <ion-icon ios="ios-arrow-back" md="ios-arrow-back"></ion-icon>
+    </div>
+
+    <div id="nextSlide" onclick="nextSlide()">
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </div>
+</ion-app>
 
 </body>
 </html>
