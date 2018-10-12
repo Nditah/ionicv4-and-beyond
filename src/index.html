@@ -22,6 +22,8 @@
     <script defer src="scripts/slider.js"></script>
 
     <link href="css/grid.css" rel="stylesheet">
+
+    <script defer src="scripts/fullscreen.js"></script>
 </head>
 <body style="margin: 0">
 
@@ -121,13 +123,16 @@
         </ion-slides>
     </ion-content>
 
-    <div id="prevSlide" onclick="previousSlide()">
-        <ion-icon ios="ios-arrow-back" md="ios-arrow-back" color="primary"></ion-icon>
-    </div>
-
-    <div id="nextSlide" onclick="nextSlide()">
-        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" color="primary"></ion-icon>
-    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="arrow-dropleft"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+            <ion-fab-button onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
 </ion-app>
 
 </body>

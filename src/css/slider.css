@@ -5,23 +5,3 @@ ion-slides {
 ion-slides.slides-md {
     --progress-bar-background-active: var(--ion-color-primary);
 }
-
-#prevSlide, #nextSlide {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    z-index: 1;
-    font-size: 4rem;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-}
-
-#prevSlide {
-    left: 2%;
-}
-
-#nextSlide {
-    right: 2%;
-}
