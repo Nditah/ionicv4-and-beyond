@@ -48,7 +48,7 @@
             <ion-slide>
                 <h1 style="display: none;">Introduction</h1>
                 <ion-grid>
-                    <ion-row>
+                    <ion-row align-items-center>
                         <ion-col size="5" text-right>
                             <img src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg" style="min-width: 260px; min-height: 260px; border-radius: 50%; border: 0;">
                         </ion-col>
@@ -115,10 +115,32 @@
             </ion-slide>
 
             <ion-slide>
-                <!-- TODO -->
-                - reusable regardless tech
-                - probably a longer life
-                - and therefore costs (no migration)
+                <ion-card no-shadow>
+                    <h1>Good reasons to bet on Web Components</h1>
+
+                    <ion-list padding-top>
+                        <ion-item>
+                            <ion-label text-wrap><strong>Performance</strong> (small is beautiful)</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Frameworks <strong>agnostic</strong></ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Might be <strong>less</strong> subject to migration</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Could allow companies to <strong>save</strong> costs on the long term</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+
+                </ion-card>
             </ion-slide>
 
             <ion-slide>
