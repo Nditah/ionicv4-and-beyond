@@ -10,7 +10,7 @@
     <meta name="description" content="Fluster, your simple and open source search for roommates has been recently upgraded to Ionic v4. In this talk, I will highlight some key features of this new version of the framework and will also introduce some concepts like web components, shadow dom, slots or css4 variables which comes along.">
 
     <!-- Ionic -->
-    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet" media="screen">
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
@@ -25,6 +25,9 @@
     <link href="css/grid.css" rel="stylesheet">
 
     <link href="css/popover.css" rel="stylesheet">
+
+    <link href="css/print.css" rel="stylesheet">
+    <script defer src="scripts/print.js"></script>
 
     <script defer src="scripts/fullscreen.js"></script>
 </head>
@@ -175,15 +178,18 @@
         </ion-slides>
     </ion-content>
 
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
         <ion-fab-button>
-            <ion-icon name="arrow-dropleft"></ion-icon>
+            <ion-icon name="apps"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="start">
             <ion-fab-button onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="presentSlidePicker()"><ion-icon name="skip-forward"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="top">
+            <ion-fab-button onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="window.open('https://github.com/peterpeterparker/ionicv4-and-beyond', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
         </ion-fab-list>
     </ion-fab>
