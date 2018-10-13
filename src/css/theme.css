@@ -12,11 +12,32 @@ ion-card[no-shadow] {
     max-width: 80%;
 }
 
-li {
+li, blockquote, p {
     font-size: 20px;
     padding: 8px;
 }
 
 li ion-icon {
     font-size: 30px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+ion-list-header {
+    --color: var(--ion-color-primary);
+}
+
+code {
+    background: var(--ion-color-primary);
+    color: var(--ion-color-secondary);
+}
+
+ion-list ion-label[text-wrap].sc-ion-label-md-h{
+    font-size: 20px;
 }

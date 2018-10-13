@@ -33,6 +33,9 @@
 <ion-app>
     <ion-content>
         <ion-slides id="slider">
+
+            <!-- BEGIN: Your slides -->
+
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>Ionic v4, web components, shadow dom and beyond 🚀</h1>
@@ -72,14 +75,88 @@
                     <h1>Overview</h1>
 
                     <ol text-left>
-                        <li>What's Ionic?</li>
                         <li>Web components</li>
                         <li>Shadow dom</li>
                         <li>Slots</li>
                         <li>CSS4 variables</li>
+                        <li>What's Ionic?</li>
                         <li>Wrapped up, Ionic v4</li>
                         <li>Demo</li>
                     </ol>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1>What are Web Components?</h1>
+                    <blockquote><strong>Web Components</strong> is a suite of different technologies allowing you to create <strong>reusable custom elements</strong> — with their functionality <strong>encapsulated away</strong> from the rest of your code — and utilize them in your web apps. - MDN web docs</blockquote>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1>Web component consists of three main technologies</h1>
+
+                    <ion-list padding-top>
+                        <ion-item>
+                            <ion-label text-wrap><strong>Custom elements</strong> A set of JavaScript APIs that allow you to define custom elements and their behaviour</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap><strong>Shadow DOM</strong> A set of JavaScript APIs for attaching an encapsulated "shadow" DOM tree to an element</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap><strong>HTML Templates</strong> The <code>&lt;template/&gt;</code> and <code>&lt;slot/&gt;</code> elements enable you to write markup templates that are not displayed in the rendered page</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <img src="assets/meme/webcomponents-what.jpg"/>
+            </ion-slide>
+
+            <ion-slide>
+                <!-- TODO -->
+                Fluster instagram
+            </ion-slide>
+
+            <ion-slide>
+                <!-- TODO -->
+                Instagram html page
+            </ion-slide>
+
+            <ion-slide>
+                <img src="assets/meme/webcomponents-david.jpg"/>
+            </ion-slide>
+
+            <ion-slide>
+                <!-- TODO -->
+                - reusable regardless tech
+                - probably a longer life
+                - and therefore costs (no migration)
+            </ion-slide>
+
+            <ion-slide>
+                <!-- TODO -->
+                - but how do I write web components
+            </ion-slide>
+
+            <ion-slide>
+                <!-- TODO -->
+                - list of web components builder
+                - sizes of bundles
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1>Ionic <strong>v4</strong></h1>
+
+                    <img style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 20px;" src="assets/img/stencil-ecosystem-chart.png"/>
                 </ion-card>
             </ion-slide>
 
@@ -93,14 +170,6 @@
                         <li>Design and animation customized for the OS</li>
                         <li>Free and open source</li>
                     </ul>
-                </ion-card>
-            </ion-slide>
-
-            <ion-slide>
-                <ion-card no-shadow>
-                    <h1>Ionic <strong>v4</strong></h1>
-
-                    <img style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 20px;" src="assets/img/stencil-ecosystem-chart.png"/>
                 </ion-card>
             </ion-slide>
 
@@ -123,6 +192,8 @@
                     </ul>
                 </ion-card>
             </ion-slide>
+
+            <!-- END: Your slides -->
 
         </ion-slides>
     </ion-content>
