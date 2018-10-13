@@ -13,12 +13,22 @@ class SlidesList extends HTMLElement {
 
 function buildSlidesListActions() {
     return new Promise(async (resolve) => {
-        const countSlides = await document.getElementById('slider').length();
-
         let result = '';
 
-        for (let i = 0; i < countSlides; i++) {
-            result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')"><ion-label>Slide ' + i + '</ion-label></ion-item>';
+        const slides = document.getElementById('slider').getElementsByTagName('ion-slide');
+
+        if (slides) {
+            let i = 0;
+
+            for (const slide of slides) {
+                const h1 = slide.getElementsByTagName('h1');
+
+                const text = 'Slide ' + i + (h1 && h1.length > 0 ? ': ' + h1[0].innerText : '');
+
+                result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')"><ion-label>' + text + '</ion-label></ion-item>';
+
+                i++;
+            }
         }
 
         resolve(result);

@@ -29,10 +29,6 @@ strong {
     text-decoration: underline;
 }
 
-ion-list-header {
-    --color: var(--ion-color-primary);
-}
-
 code {
     background: var(--ion-color-primary);
     color: var(--ion-color-secondary);
