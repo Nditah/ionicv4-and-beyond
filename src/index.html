@@ -20,8 +20,11 @@
 
     <link href="css/slider.css" rel="stylesheet">
     <script defer src="scripts/slider.js"></script>
+    <script defer src="scripts/sliderJumpTo.js"></script>
 
     <link href="css/grid.css" rel="stylesheet">
+
+    <link href="css/popover.css" rel="stylesheet">
 
     <script defer src="scripts/fullscreen.js"></script>
 </head>
@@ -69,11 +72,12 @@
                     <h1>Overview</h1>
 
                     <ol text-left>
-                        <li>Ionic v4</li>
+                        <li>What's Ionic?</li>
                         <li>Web components</li>
                         <li>Shadow dom</li>
                         <li>Slots</li>
                         <li>CSS4 variables</li>
+                        <li>Wrapped up, Ionic v4</li>
                         <li>Demo</li>
                     </ol>
                 </ion-card>
@@ -129,10 +133,13 @@
         </ion-fab-button>
         <ion-fab-list side="start">
             <ion-fab-button onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="presentSlidePicker()"><ion-icon name="skip-forward"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
         </ion-fab-list>
     </ion-fab>
+
+    <ion-popover-controller></ion-popover-controller>
 </ion-app>
 
 </body>
