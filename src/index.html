@@ -178,6 +178,37 @@
 
             <ion-slide>
                 <ion-card no-shadow>
+                    <h1>Custom elements</h1>
+                    <code padding margin text-left>
+class MyCustomElement extends HTMLElement {
+    constructor() {
+        super();
+
+        // Create a shadow root
+        const shadowRoot= this.attachShadow({mode: 'open'});
+
+
+        const styles=`
+            :host {
+                color: var(--my-color, red);
+            }
+        `;
+
+        shadowRoot.innerHTML = `
+            &lt;style&gt;${styles}&lt;/style&gt;
+            &lt;h3&gt;Hello&lt;/h3&gt;
+            &lt;slot name='after-content'&gt;Button&lt;/slot&gt;
+        `;
+    }
+}
+
+customElements.define('my-custom-element', MyCustomElement);
+                    </code>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
                     <h1>Ionic</h1>
 
                     <ul text-left>

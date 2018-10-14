@@ -30,8 +30,11 @@ strong {
 }
 
 code {
-    background: var(--ion-color-primary);
-    color: var(--ion-color-secondary);
+    white-space: pre;
+    display: block;
+    background: white;
+    color: var(--ion-color-tertiary-shade);
+    border-radius: 8px;
 }
 
 ion-list ion-label[text-wrap].sc-ion-label-md-h{
