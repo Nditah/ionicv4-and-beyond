@@ -32,9 +32,9 @@ strong {
 code {
     white-space: pre;
     display: block;
-    background: white;
-    color: var(--ion-color-tertiary-shade);
-    border-radius: 8px;
+    background: #fbfbfb;
+    color: rgba(0,0,0,.84);
+    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
 }
 
 ion-list ion-label[text-wrap].sc-ion-label-md-h{
