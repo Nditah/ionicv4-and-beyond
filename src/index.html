@@ -158,29 +158,77 @@
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>Shadom DOM</h1>
-                    <!-- TODO -->
+
+                    <ion-grid padding-top>
+                        <ion-row align-items-center justify-content-center>
+                            <ion-col size="4">
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-label text-wrap><strong>Isolated DOM</strong></ion-label>
+                                        <ion-checkbox slot="start" checked></ion-checkbox>
+                                    </ion-item>
+
+                                    <ion-item>
+                                        <ion-label text-wrap><strong>Isolated CSS</strong></ion-label>
+                                        <ion-checkbox slot="start" checked></ion-checkbox>
+                                    </ion-item>
+                                </ion-list>
+                            </ion-col>
+
+                            <ion-col size="8">
+                                <img src="assets/img/shadow-dom-no-details.png" class="add-box-shadow"/>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-card>
             </ion-slide>
 
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>Slots</h1>
-                    <!-- TODO -->
+
+                    <ion-grid padding-top>
+                        <ion-row align-items-center justify-content-center>
+                            <ion-col size="12">
+                                <code padding margin text-left>&lt;ion-button&gt;Hello&lt;/ion-button&gt;</code>
+                            </ion-col>
+
+                            <ion-col size="12">
+                                <img src="assets/img/shadow-dom-details.png" class="add-box-shadow"/>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-card>
             </ion-slide>
 
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>CSS4 variables</h1>
-                    <!-- TODO -->
+
+                    <ion-grid padding-top>
+                        <ion-row align-items-center justify-content-center>
+                            <ion-col size="12">
+                                <code padding margin text-left>ion-button button {
+    background: yellow !important; // -> No effect
+}
+
+ion-button {
+    --background: red; // -> Cool
+}</code>
+                            </ion-col>
+
+                            <ion-col size="12">
+                                <img src="assets/img/shadow-dom-css.png" class="add-box-shadow"/>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-card>
             </ion-slide>
 
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>Custom elements</h1>
-                    <code padding margin text-left>
-class MyCustomElement extends HTMLElement {
+                    <code padding margin text-left>class MyCustomElement extends HTMLElement {
     constructor() {
         super();
 
@@ -202,8 +250,7 @@ class MyCustomElement extends HTMLElement {
     }
 }
 
-customElements.define('my-custom-element', MyCustomElement);
-                    </code>
+customElements.define('my-custom-element', MyCustomElement);</code>
                 </ion-card>
             </ion-slide>
 
@@ -224,7 +271,7 @@ customElements.define('my-custom-element', MyCustomElement);
                 <ion-card no-shadow>
                     <h1>Ionic <strong>v4</strong></h1>
 
-                    <img style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 20px;" src="assets/img/stencil-ecosystem-chart.png"/>
+                    <img class="add-box-shadow" style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 20px;" src="assets/img/stencil-ecosystem-chart.png"/>
                     <p>Source: <a href="https://twitter.com/joshuamorony">Josh Morony</a>, <a href="https://www.joshmorony.com/building-a-pwa-with-stencil-an-introduction-to-stencil/">https://www.joshmorony.com/building-a-pwa-with-stencil-an-introduction-to-stencil/</a></p>
                 </ion-card>
             </ion-slide>
