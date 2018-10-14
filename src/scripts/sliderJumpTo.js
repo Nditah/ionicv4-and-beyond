@@ -11,7 +11,7 @@ class SlidesList extends HTMLElement {
     }
 }
 
-function buildSlidesListActions() {
+buildSlidesListActions = function() {
     return new Promise(async (resolve) => {
         let result = '';
 
@@ -33,16 +33,16 @@ function buildSlidesListActions() {
 
         resolve(result);
     });
-}
+};
 
-async function jumpToSlide(index) {
+jumpToSlide = async function(index) {
     await document.getElementById('slider').slideTo(index, 0);
     await document.querySelector('ion-popover-controller').dismiss();
-}
+};
 
 customElements.define('slides-list', SlidesList);
 
-async function presentSlidePicker() {
+presentSlidePicker = async function() {
     const popoverController = document.querySelector('ion-popover-controller');
 
     if (!popoverController) {
@@ -57,4 +57,4 @@ async function presentSlidePicker() {
     });
 
     return await popover.present();
-}
+};

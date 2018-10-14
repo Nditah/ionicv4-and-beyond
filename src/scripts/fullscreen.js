@@ -1,5 +1,5 @@
 // Source: https://developers.google.com/web/fundamentals/native-hardware/fullscreen/
-function toggleFullScreen() {
+toggleFullScreen = function() {
     const doc = window.document;
     const docEl = doc.documentElement;
 
@@ -11,4 +11,4 @@ function toggleFullScreen() {
     } else {
         cancelFullScreen.call(doc);
     }
-}
+};

@@ -1,4 +1,4 @@
-async function updateSlider() {
+updateSlider = async function() {
     if (!document.getElementById('slider')) {
         return;
     }
@@ -6,23 +6,23 @@ async function updateSlider() {
     await document.getElementById('slider').update();
 
     await document.getElementById('slider').stopAutoplay();
-}
+};
 
-async function previousSlide() {
+previousSlide = async function() {
     if (!document.getElementById('slider')) {
         return;
     }
 
     await document.getElementById('slider').slidePrev();
-}
+};
 
-async function nextSlide() {
+nextSlide = async function() {
     if (!document.getElementById('slider')) {
         return;
     }
 
     await document.getElementById('slider').slideNext();
-}
+};
 
 const slidesOptions = {
     autoplay: false,
