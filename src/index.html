@@ -89,7 +89,7 @@
                     <ion-grid padding-top>
                         <ion-row align-items-center justify-content-center>
                             <ion-col size="4">
-                                <ion-list>
+                                <ion-list lines="none">
                                     <ion-item>
                                         <ion-label text-wrap><strong>Isolated DOM</strong></ion-label>
                                         <ion-checkbox slot="start" checked></ion-checkbox>
@@ -213,7 +213,7 @@ customElements.define('my-custom-element', MyCustomElement);</code>
                 <ion-card no-shadow>
                     <h1>Good reasons to bet on Web Components</h1>
 
-                    <ion-list padding-top>
+                    <ion-list lines="none" padding-top>
                         <ion-item>
                             <ion-label text-wrap><strong>Performance</strong>: small, simple, lazy loaded and support SSR</ion-label>
                             <ion-checkbox slot="start" checked></ion-checkbox>
@@ -271,12 +271,19 @@ customElements.define('my-custom-element', MyCustomElement);</code>
 
             <ion-slide>
                 <ion-card no-shadow>
-                    <h1>@ionic/angular</h1>
+                    <h1>Beside core, what's new In @ionic/angular?</h1>
 
-                    <ul text-left>
-                        <li>CLI</li>
-                        <li>Routing</li>
-                    </ul>
+                    <ion-list lines="none" padding-top>
+                        <ion-item>
+                            <ion-label text-wrap>Angular style <strong>routing</strong> ("instead of push/pop")</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Angular <strong>CLI</strong> use under the hood: no more app-scripts</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
                 </ion-card>
             </ion-slide>
 
