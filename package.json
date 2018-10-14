@@ -4,7 +4,9 @@
   "description": "Ionic v4, web components, shadow dom and beyond",
   "homepage": "https://fluster.io",
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "author": {
     "name": "David Dal Busco",
@@ -16,7 +18,15 @@
     "url": "git://github.com/peterpeterparker/ionicv4-and-beyond.git"
   },
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.3",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lite-server": "^2.4.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "license": "MIT",
   "dependencies": {}

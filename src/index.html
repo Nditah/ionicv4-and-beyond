@@ -14,22 +14,6 @@
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-    <!-- Custom -->
-    <link href="css/variables.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-
-    <link href="css/slider.css" rel="stylesheet">
-    <script defer src="scripts/slider.js"></script>
-    <script defer src="scripts/sliderJumpTo.js"></script>
-
-    <link href="css/grid.css" rel="stylesheet">
-
-    <link href="css/popover.css" rel="stylesheet">
-
-    <link href="css/print.css" rel="stylesheet">
-    <script defer src="scripts/print.js"></script>
-
-    <script defer src="scripts/fullscreen.js"></script>
 </head>
 <body style="margin: 0">
 
@@ -243,7 +227,7 @@ ion-button {
         `;
 
         shadowRoot.innerHTML = `
-            &lt;style&gt;${styles}&lt;/style&gt;
+            &lt;style&gt;&dollar;{styles}&lt;/style&gt;
             &lt;h3&gt;Hello&lt;/h3&gt;
             &lt;slot name='after-content'&gt;Button&lt;/slot&gt;
         `;
@@ -310,6 +294,8 @@ customElements.define('my-custom-element', MyCustomElement);</code>
 
     <ion-popover-controller></ion-popover-controller>
 </ion-app>
+
+<script defer src="app.bundle.js"></script>
 
 </body>
 </html>
