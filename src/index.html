@@ -69,7 +69,7 @@
                         <li>CSS4 variables</li>
                         <li>What's Ionic?</li>
                         <li>Wrapped up, Ionic v4</li>
-                        <li>Demo</li>
+                        <li>Repeat</li>
                     </ol>
                 </ion-card>
             </ion-slide>
@@ -86,27 +86,17 @@
                 <ion-card no-shadow>
                     <h1>Shadom DOM</h1>
 
-                    <ion-grid padding-top>
-                        <ion-row align-items-center justify-content-center>
-                            <ion-col size="4">
-                                <ion-list lines="none">
-                                    <ion-item>
-                                        <ion-label text-wrap><strong>Isolated DOM</strong></ion-label>
-                                        <ion-checkbox slot="start" checked></ion-checkbox>
-                                    </ion-item>
+                    <ion-list lines="none" padding-top>
+                        <ion-item>
+                            <ion-label text-wrap><strong>Isolated DOM</strong></ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
 
-                                    <ion-item>
-                                        <ion-label text-wrap><strong>Isolated CSS</strong></ion-label>
-                                        <ion-checkbox slot="start" checked></ion-checkbox>
-                                    </ion-item>
-                                </ion-list>
-                            </ion-col>
-
-                            <ion-col size="8">
-                                <img src="assets/img/shadow-dom-no-details.png" class="add-box-shadow"/>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
+                        <ion-item>
+                            <ion-label text-wrap><strong>Isolated CSS</strong></ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
                 </ion-card>
             </ion-slide>
 
@@ -117,11 +107,22 @@
                     <ion-grid padding-top>
                         <ion-row align-items-center justify-content-center>
                             <ion-col size="12">
-                                <code padding margin text-left>&lt;ion-button&gt;Hello&lt;/ion-button&gt;</code>
+                                <code padding margin text-left>&lt;ion-button&gt;
+    &lt;ion-label&gt;Hello world&lt;/ion-label&gt;
+    &lt;ion-icon name="happy" slot="start"&gt;&lt;/ion-icon&gt;
+&lt;/ion-button&gt;
+                                </code>
                             </ion-col>
 
                             <ion-col size="12">
-                                <img src="assets/img/shadow-dom-details.png" class="add-box-shadow"/>
+                                <ion-button shape="round">
+                                    <ion-label>Hello world</ion-label>
+                                    <ion-icon name="happy" slot="start"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+
+                            <ion-col size="12">
+                                <img src="assets/img/shadow-dom-details.png" class="add-box-shadow" style="margin-top: 12px;"/>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -136,7 +137,7 @@
                         <ion-row align-items-center justify-content-center>
                             <ion-col size="12">
                                 <code padding margin text-left>ion-button button {
-    background: yellow !important; // -> No effect
+    background: yellow !important; // -> Not cool
 }
 
 ion-button {
@@ -144,8 +145,22 @@ ion-button {
 }</code>
                             </ion-col>
 
+                            <ion-col size="6">
+                                <ion-button shape="round" class="demo-b1">
+                                    <ion-label>Hello world in yellow</ion-label>
+                                    <ion-icon name="happy" slot="start"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+
+                            <ion-col size="6">
+                                <ion-button shape="round" class="demo-b2">
+                                    <ion-label>Hello world in red</ion-label>
+                                    <ion-icon name="happy" slot="start"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+
                             <ion-col size="12">
-                                <img src="assets/img/shadow-dom-css.png" class="add-box-shadow"/>
+                                <img src="assets/img/shadow-dom-css.png" class="add-box-shadow" style="margin-top: 12px;"/>
                             </ion-col>
                         </ion-row>
                     </ion-grid>

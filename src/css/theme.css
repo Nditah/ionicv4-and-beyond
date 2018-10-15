@@ -44,3 +44,11 @@ ion-list ion-label[text-wrap].sc-ion-label-md-h{
 img.add-box-shadow, code {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .14), 0 4px 5px rgba(0, 0, 0, .1);
 }
+
+ion-button.demo-b1 button {
+    background: yellow !important;
+}
+
+ion-button.demo-b2 {
+    --background: red;
+}
