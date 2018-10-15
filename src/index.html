@@ -321,6 +321,39 @@ customElements.define('my-custom-element', MyCustomElement);</code>
                 </ion-card>
             </ion-slide>
 
+            <ion-slide>
+                <h1 style="display: none;">Migration's thoughts</h1>
+                <img src="assets/meme/ionic-david.jpg"/>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1>A feedback about the migration from v3 to v4</h1>
+
+                    <ion-list lines="none" padding-top>
+                        <ion-item>
+                            <ion-label text-wrap>Did it took <strong>time</strong>? Yes of course (my app is 68 components, 51 providers, 20 pages, 16 modals, 5 pipes and 1 directive). Also I developed some other GUI and UX improvements in the meantime</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>What was <strong>difficult</strong>? I began probably to early (alpha-11) and styling with Shadow-dom was difficult to understand (less documentation and tutorials at that time). Also my designer made me develop too much custom style 🤣</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>About <strong>styling</strong> any tips? The <a href="https://beta.ionicframework.com/docs/theming/color-generator">color generator</a> is really great. If you can't achieve it, submit a PR to add a new CSS4 variables or create your own (web) components</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>And the other topics (<strong>routing</strong>, async/await, typings, etc.) weren't too difficult? Not at all, really straight forward and/or solved with copy paste. Furthermore, I've to add, since the begin of my migration the quality was really there</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
+            </ion-slide>
+
             <!-- END: Your slides -->
 
         </ion-slides>
