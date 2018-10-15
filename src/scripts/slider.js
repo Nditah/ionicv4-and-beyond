@@ -24,6 +24,10 @@ nextSlide = async function() {
     await document.getElementById('slider').slideNext();
 };
 
+firstSlide = async function() {
+    await document.getElementById('slider').slideTo(0, 2000);
+};
+
 const slidesOptions = {
     autoplay: false,
     pagination: {
