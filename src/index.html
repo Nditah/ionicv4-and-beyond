@@ -383,10 +383,37 @@ customElements.define('my-custom-element', MyCustomElement);</code>
             </ion-slide>
 
             <ion-slide>
-                <ion-card no-shadow>
+                <ion-card no-shadow class="align-start-xs">
                     <h1></h1>
 
                     <p><a href="https://github.com/fluster/deckdeckgo">DeckDeckGo</a> the new tool to create lightweight presentation using HTML and Ionic components</p>
+
+                    <ion-list lines="none" padding-top>
+                        <ion-item>
+                            <ion-label text-wrap>Use HTML and CSS to create <strong>without effort</strong> your presentation</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Use <strong>Ionic</strong> components to create the content or even add extra features</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Rapidly <strong>style</strong> your presentation thank to the <a href="https://beta.ionicframework.com/docs/theming/color-generator">Ionic Color Generator</a></ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Lightweight and <strong>lazy</strong> loaded images</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap><strong>Future:</strong> offline support (service workers)</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
 
                     <ion-fab-button onclick="firstSlide()" padding-top style="display: flex; justify-content: center;" padding>
                         <ion-icon name="refresh"></ion-icon>
