@@ -6,6 +6,12 @@ a ion-icon {
     margin-right: 4px;
 }
 
+@media(min-width: 992px) {
+    ion-grid {
+        width: 80%;
+    }
+}
+
 ion-card[no-shadow] {
     box-shadow: none;
     --color: var(--ion-color-primary);
@@ -35,6 +41,12 @@ code {
     background: #fbfbfb;
     color: rgba(0,0,0,.84);
     font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+}
+
+@media(max-width: 768px) {
+    code {
+        font-size: 0.5rem;
+    }
 }
 
 ion-list ion-label[text-wrap].sc-ion-label-md-h{

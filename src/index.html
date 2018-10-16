@@ -34,7 +34,7 @@
                 <ion-grid>
                     <ion-row align-items-center>
                         <ion-col size="5" text-right>
-                            <img src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg" style="min-width: 260px; min-height: 260px; border-radius: 50%; border: 0;">
+                            <img src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg" style="min-width: 14vh; min-height: 14vh; border-radius: 50%; border: 0;">
                         </ion-col>
                         <ion-col size="7">
                             <h2>David Dal Busco</h2>
@@ -77,7 +77,7 @@
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>What are Web Components?</h1>
-                    <blockquote><strong>Web Components</strong> is consists of three main technologies (<strong>Custom elements</strong>, <strong>Shadow DOM</strong> and <strong>HTML Templates</strong>) allowing you to create <strong>reusable custom elements</strong> — with their functionality <strong>encapsulated away</strong> from the rest of your code — and utilize them in your web apps.</blockquote>
+                    <blockquote><strong>Web Components</strong> consists of three main technologies (<strong>Custom elements</strong>, <strong>Shadow DOM</strong> and <strong>HTML Templates</strong>) allowing you to create <strong>reusable custom elements</strong> — with their functionality <strong>encapsulated away</strong> from the rest of your code — and utilize them in your web apps.</blockquote>
                     <p><small><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">MDN Web Docs</a></small></p>
                 </ion-card>
             </ion-slide>
@@ -152,14 +152,14 @@ ion-button {
 }</code>
                             </ion-col>
 
-                            <ion-col size="6">
+                            <ion-col size-md="6" size-xs="12">
                                 <ion-button shape="round" class="demo-b1">
                                     <ion-label>Hello world in yellow</ion-label>
                                     <ion-icon name="happy" slot="start"></ion-icon>
                                 </ion-button>
                             </ion-col>
 
-                            <ion-col size="6">
+                            <ion-col size-md="6" size-xs="12">
                                 <ion-button shape="round" class="demo-b2">
                                     <ion-label>Hello world in red</ion-label>
                                     <ion-icon name="happy" slot="start"></ion-icon>
@@ -209,8 +209,17 @@ customElements.define('my-custom-element', MyCustomElement);</code>
             </ion-slide>
 
             <ion-slide>
-                <h1>Reusable components</h1>
-                <img src="assets/img/web-photo-filter-app.png" style="max-height: 600px; width: auto;"/>
+                <ion-grid>
+                    <ion-row align-items-center>
+                        <ion-col size="6">
+                            <h1>Reusable components</h1>
+                        </ion-col>
+
+                        <ion-col size="6">
+                            <img src="assets/img/web-photo-filter-app.png" style="max-height: 600px; width: auto;"/>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-slide>
 
             <ion-slide>
@@ -357,9 +366,10 @@ customElements.define('my-custom-element', MyCustomElement);</code>
             <ion-slide>
                 <ion-card no-shadow>
                     <h1>Repeat</h1>
-                    <ion-icon src="assets/img/wookiee-talkie.svg" style="font-size: 14rem;" padding-top></ion-icon>
 
-                    <ion-fab-button onclick="firstSlide()" padding-top style="display: flex; justify-content: center;">
+                    <img src="assets/meme/repeat.gif"/>
+
+                    <ion-fab-button onclick="firstSlide()" padding-top style="display: flex; justify-content: center;" padding>
                         <ion-icon name="refresh"></ion-icon>
                     </ion-fab-button>
                 </ion-card>
