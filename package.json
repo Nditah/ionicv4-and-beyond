@@ -2,11 +2,11 @@
   "name": "ionicv4-and-beyond",
   "version": "0.0.1",
   "description": "Ionic v4, web components, shadow dom and beyond",
-  "homepage": "https://fluster.io",
+  "homepage": "https://deckdeckgo.com",
   "scripts": {
     "dev": "lite-server",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production"
   },
   "author": {
     "name": "David Dal Busco",
