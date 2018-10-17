@@ -37,7 +37,7 @@ buildSlidesListActions = function() {
 
 jumpToSlide = async function(index) {
     await document.getElementById('slider').slideTo(index, 0);
-    await lazyLoadSlideImages(index);
+    await lazyLoadOneSlideImages(index);
     await document.querySelector('ion-popover-controller').dismiss();
 };
 

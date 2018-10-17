@@ -1,21 +1,21 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --ion-background-color: #3880ff;
+
+    --ion-text-color: var(--ion-color-primary);
+
+    --ion-header-size: 40px;
+}
+
 h1 {
     color: var(--ion-color-primary);
 }
 
 a ion-icon {
     margin-right: 4px;
-}
-
-@media(min-width: 992px) {
-    ion-grid {
-        width: 80%;
-    }
-}
-
-ion-card[no-shadow] {
-    box-shadow: none;
-    --color: var(--ion-color-primary);
-    max-width: 80%;
 }
 
 li, blockquote, p {
@@ -35,32 +35,6 @@ strong {
     text-decoration: underline;
 }
 
-code {
-    white-space: pre;
-    display: block;
-    background: #fbfbfb;
-    color: rgba(0,0,0,.84);
-    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
-}
-
-@media(max-width: 768px) {
-    code {
-        font-size: 0.5rem;
-    }
-}
-
-ion-list ion-label[text-wrap].sc-ion-label-md-h{
-    font-size: 20px;
-}
-
 img.add-box-shadow, code {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .14), 0 4px 5px rgba(0, 0, 0, .1);
-}
-
-ion-button.demo-b1 button {
-    background: yellow !important;
-}
-
-ion-button.demo-b2 {
-    --background: red;
 }
