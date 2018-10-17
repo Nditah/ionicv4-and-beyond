@@ -18,6 +18,10 @@ npm run build
 npm run dev
 ```
 
+## Slides
+
+This presentation was build using [DeckDeckGo](https://deckdeckgo.com)
+
 ## License
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com)
