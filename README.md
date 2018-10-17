@@ -4,20 +4,17 @@
 
 In this talk, I will highlight some key features of this new version of the framework and will also introduce some concepts like web components, shadow dom, slots or css4 variables which comes along.
 
-Finally, I will try to wrap everything in a quick demo.
-
-## Features
-
-* The slides of the talk are build with `@ionic/core` in a plain `index.html` file 😉
-
-* [lite-server](https://github.com/johnpapa/lite-server) is used to serve the slides
+Finally, instead of a standard demo, once we will have been through the slides, we will begin again from the begin and have a look at the code, because these slides are actually an `index.html` where `@ionic/core` is used 😉
 
 ## Getting Started
+
+Clone the repo, install the dependencies, build the talk and run a local server:
 
 ```bash
 git clone https://github.com/peterpeterparker/ionicv4-and-beyond
 cd ionicv4-and-beyond
 npm install
+npm run build
 npm run dev
 ```
 
